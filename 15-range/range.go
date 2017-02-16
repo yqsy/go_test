@@ -9,4 +9,14 @@ func main() {
 		fmt.Println("2**%d = %d\n", i, v)
 	}
 
+	pow = make([]int, 10)
+
+	for i := range pow {
+		pow[i] = 1 << uint(i)
+	}
+
+	for _, value := range pow {
+		fmt.Printf("%d\n", value)
+	}
+
 }
